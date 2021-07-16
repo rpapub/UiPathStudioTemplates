@@ -1,0 +1,1 @@
+Test folder should store the files containing test data.

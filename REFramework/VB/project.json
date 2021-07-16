@@ -36,7 +36,33 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "103bda9f-8ac8-45c7-82c9-8682ae112454",
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "86232832-5ee5-4488-805a-879428d22d5f",
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c0206b2c-c08d-4f6b-a655-2537b0b09e85",
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "861589dc-4c65-456f-b051-c1ae694e9012",
+        "fileName": "Tests\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "19c98ee1-57a3-446f-ac0f-90124ea7392b",
+        "fileName": "Tests\\ProcessTestCase.xaml"
+      }
+    ],
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
