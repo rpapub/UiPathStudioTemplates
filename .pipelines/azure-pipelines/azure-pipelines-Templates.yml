@@ -40,6 +40,7 @@ jobs:
         filePath: $(System.DefaultWorkingDirectory)\.pipelines\azure-pipelines\DecideTemplatesToPack.ps1
         arguments:
           -outputDirectory '${{ variables.outputDirectory }}'
+          -commitHash $(Build.SourceVersion)
           -shouldGetTemplatesFromConfig $$(shouldGetTemplatesFromConfig)
       displayName: "Pack modified templates"
 

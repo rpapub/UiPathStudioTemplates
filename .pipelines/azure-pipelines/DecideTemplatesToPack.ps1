@@ -3,6 +3,8 @@ param(
 
     [string] $templatesConfig = "$PSScriptRoot\templates.config",
 
+    [string] $commitHash,
+
     [string] $outputDirectory
 )
 
@@ -22,10 +24,8 @@ if ($shouldGetTemplatesFromConfig -eq $true) {
     }
 } else {
     Write-Host "Checking the commit difference"
-
+    Write-Host "Current commit $commitHash"
     # get changed files from last commit
-    Write-Host "Commit $(Build.SourceVersion)"
-    $commitHash = $(Build.SourceVersion)
     $files=$(git diff-tree --no-commit-id --name-only -r $commitHash)
     $list=$files -split ' '
     $count=$list.Length
