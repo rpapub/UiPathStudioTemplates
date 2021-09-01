@@ -9,6 +9,7 @@ param(
 Write-Host "Creating the hashset..."
 $set = New-Object System.Collections.Generic.HashSet[string]
 Write-Host "Deciding wether to use the templates.config file or check the commit differences"
+Write-Host "shouldGetTemplatesFromConfig equals $shouldGetTemplatesFromConfig"
 if ($shouldGetTemplatesFromConfig) {
     Write-Host "Reading from config file $templatesConfig"
     [xml]$templatesXmlDoc = Get-Content -Path $script:templatesConfig

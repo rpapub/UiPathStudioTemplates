@@ -1,3 +1,9 @@
+parameters:
+  - name: shouldGetTemplatesFromConfig
+    displayName: shouldGetTemplatesFromConfig
+    type: boolean
+    default: false
+
 trigger:
   branches:
     include:
@@ -32,7 +38,7 @@ jobs:
         filePath: $(System.DefaultWorkingDirectory)\.pipelines\azure-pipelines\DecideTemplatesToPack.ps1
         arguments:
           -outputDirectory '${{ variables.outputDirectory }}'
-          -shouldGetTemplatesFromConfig $(shouldGetTemplatesFromConfig)
+          -shouldGetTemplatesFromConfig ${{ variables.shouldGetTemplatesFromConfig }}
       displayName: "Pack modified templates"
 
     - task: PublishBuildArtifacts@1
