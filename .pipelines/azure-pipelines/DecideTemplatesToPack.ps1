@@ -1,5 +1,5 @@
 param(
-    [bool] $shouldGetTemplatesFromConfig = $false,
+    [string] $shouldGetTemplatesFromConfig = $false,
 
     [string] $templatesConfig = "$PSScriptRoot\templates.config",
 
