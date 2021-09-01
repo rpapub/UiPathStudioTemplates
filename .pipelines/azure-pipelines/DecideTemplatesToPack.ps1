@@ -24,8 +24,9 @@ if ($shouldGetTemplatesFromConfig -eq $true) {
     Write-Host "Checking the commit difference"
 
     # get changed files from last commit
-    # Write-Host "Commit $(Build.SourceVersion)"
-    $files=$(git diff-tree --no-commit-id --name-only -r $Build.SourceVersion)
+    Write-Host "Commit $(Build.SourceVersion)"
+    $commitHash = $(Build.SourceVersion)
+    $files=$(git diff-tree --no-commit-id --name-only -r $commitHash)
     $list=$files -split ' '
     $count=$list.Length
     Write-Host "Total changed $count files"
