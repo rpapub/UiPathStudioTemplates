@@ -38,7 +38,7 @@ jobs:
         filePath: $(System.DefaultWorkingDirectory)\.pipelines\azure-pipelines\DecideTemplatesToPack.ps1
         arguments:
           -outputDirectory '${{ variables.outputDirectory }}'
-          -shouldGetTemplatesFromConfig ${{ variables.shouldGetTemplatesFromConfig }}
+          -shouldGetTemplatesFromConfig ${{ parameters.shouldGetTemplatesFromConfig }}
       displayName: "Pack modified templates"
 
     - task: PublishBuildArtifacts@1
