@@ -1,5 +1,5 @@
 param(
-    [string] $shouldGetTemplatesFromConfig = $false,
+    [bool] $shouldGetTemplatesFromConfig = $false,
 
     [string] $templatesConfig = "$PSScriptRoot\templates.config",
 
@@ -24,7 +24,8 @@ if ($shouldGetTemplatesFromConfig -eq $true) {
     Write-Host "Checking the commit difference"
 
     # get changed files from last commit
-    $files=$(git diff-tree --no-commit-id --name-only -r $(Build.SourceVersion))
+    # Write-Host "Commit $(Build.SourceVersion)"
+    $files=$(git diff-tree --no-commit-id --name-only -r $Build.SourceVersion)
     $list=$files -split ' '
     $count=$list.Length
     Write-Host "Total changed $count files"
