@@ -26,10 +26,10 @@ if ($shouldGetTemplatesFromConfig -eq $true) {
     Write-Host "Build reason is $Env:BUILD_REASON"
     if ($Env:BUILD_REASON -eq "PullRequest") {
         Write-Host "Checking the commit difference for the PR"
-        Write-Host "Target branch: $Env:SYSTEM_PULLREQUEST_TARGETBRANCH"
-        Write-Host "Source branch: $Env:SYSTEM_PULLREQUEST_SOURCEBRANCH"
+        Write-Host "Target branch: origin/$Env:SYSTEM_PULLREQUEST_TARGETBRANCH"
+        Write-Host "Source branch: origin/$Env:SYSTEM_PULLREQUEST_SOURCEBRANCH"
         # get changed files from last commit
-        $files=$(git diff-tree --no-commit-id --name-only $Env:SYSTEM_PULLREQUEST_TARGETBRANCH $Env:SYSTEM_PULLREQUEST_SOURCEBRANCH --)
+        $files=$(git diff-tree --no-commit-id --name-only -r origin/$Env:SYSTEM_PULLREQUEST_TARGETBRANCH origin/$Env:SYSTEM_PULLREQUEST_SOURCEBRANCH --)
     } else {
         Write-Host "Checking the commit difference for $commitHash"
         # get changed files from last commit
