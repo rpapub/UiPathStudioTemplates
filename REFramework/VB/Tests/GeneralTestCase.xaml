@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>873.333333333333,1145.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>902,1257.33333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GeneralTestCase_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -78,7 +78,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GeneralTestCase" sap:VirtualizedContainerService.HintSize="618,980.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="GeneralTestCase.xaml is a data driven test case based on the Tests.xlsx, Tests sheet where the developer will write the workflow paths of the workflows to be tested and the expected exception - AppEx, BRE or Success. Running GeneralTestCase with data variations is going to be a clear result of comparing the expected result with the actual result after passing through this list of workflows as test data. &#xD;&#xA;There are two possible statuses - PASS or FAIL for each workflow that was run. The status is PASS if the actual exception caught is the one previously defined in the Tests sheet and FAIL otherwise. " DisplayName="GeneralTestCase" sap:VirtualizedContainerService.HintSize="618,1092.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Tests" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="TestCounter" />
@@ -100,6 +100,7 @@
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="576,186.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
@@ -118,7 +119,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.666666666667,375.333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke workflow" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="[WorkflowFile]">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke workflow" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="[WorkflowFile]">
             <ui:InvokeWorkflowFile.Arguments>
               <scg:Dictionary x:TypeArguments="x:String, Argument" />
             </ui:InvokeWorkflowFile.Arguments>
@@ -172,7 +173,7 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
               </ActivityAction.Argument>
-              <Sequence sap:VirtualizedContainerService.HintSize="304,253.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence sap:VirtualizedContainerService.HintSize="304,256" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
