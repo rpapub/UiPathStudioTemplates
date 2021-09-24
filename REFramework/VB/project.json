@@ -5,7 +5,6 @@
   "dependencies": {
     "UiPath.Excel.Activities": "[2.9.5]",
     "UiPath.System.Activities": "[21.4.1]",
-    "UiPath.Terminal.Activities": "[2.3.0]",
     "UiPath.Testing.Activities": "[1.3.2]",
     "UiPath.UIAutomation.Activities": "[21.4.4]"
   },
@@ -39,32 +38,32 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "103bda9f-8ac8-45c7-82c9-8682ae112454",
         "fileName": "Tests\\GetTransactionDataTestCase.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "86232832-5ee5-4488-805a-879428d22d5f",
         "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "c0206b2c-c08d-4f6b-a655-2537b0b09e85",
         "fileName": "Tests\\InitAllSettingsTestCase.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "861589dc-4c65-456f-b051-c1ae694e9012",
         "fileName": "Tests\\MainTestCase.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "19c98ee1-57a3-446f-ac0f-90124ea7392b",
         "fileName": "Tests\\ProcessTestCase.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "2a4561fe-eedb-4b43-8cad-ffd29ef986d9",
         "dataVariationFilePath": ".variations\\Tests_Tests.json",
         "fileName": "Tests\\GeneralTestCase.xaml"

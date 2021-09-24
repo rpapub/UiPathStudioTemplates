@@ -5,6 +5,7 @@
   "dependencies": {
     "UiPath.Excel.Activities": "[2.8.5]",
     "UiPath.System.Activities": "[20.4.0]",
+    "UiPath.Testing.Activities": "[1.3.3]",
     "UiPath.UIAutomation.Activities": "[20.4.1]"
   },
   "webServices": [],
@@ -21,7 +22,9 @@
       "Private:*",
       "*password*"
     ],
-    "executionType": "Workflow"
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -30,7 +33,43 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfoCollection": []
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2ca32067-05e8-4067-82fb-d469ea3400a9",
+        "dataVariationFilePath": ".variations\\Tests_Tests.json",
+        "fileName": "Tests\\GeneralTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f2b52033-e7b4-47c1-ad66-ca8527ce5e96",
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "65c49e26-86ee-4389-9393-29b6d25e5a88",
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "76990489-697b-44db-9f8b-4aee1cb71e47",
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e437b9a2-1a53-4c3d-ac70-3328b957c9a7",
+        "fileName": "Tests\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4d3c0f23-8020-4930-9ab2-916c71da7507",
+        "fileName": "Tests\\MainTestCase.xaml"
+      }
+    ],
+    "modernBehavior": false
   },
   "expressionLanguage": "CSharp",
   "entryPoints": [
@@ -41,5 +80,8 @@
       "output": []
     }
   ],
-  "isTemplate": false
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
 }
