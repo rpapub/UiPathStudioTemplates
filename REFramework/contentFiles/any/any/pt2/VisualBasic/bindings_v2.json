@@ -1,0 +1,78 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "queue",
+      "value": {
+        "name": {
+          "defaultValue": "GlobalVariablesNamespace.GlobalVariables.OrchestratorQueueName",
+          "isExpression": false
+        },
+        "folderPath": {
+          "defaultValue": "GlobalVariablesNamespace.GlobalVariables.OrchestratorQueueFolder",
+          "isExpression": false
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "SampleURL",
+          "isExpression": false
+        },
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "SampleAssetSecondFolder",
+          "isExpression": false
+        },
+        "folderPath": {
+          "defaultValue": "AlexvSecondFolder",
+          "isExpression": false
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "AssetNotCreated",
+          "isExpression": false
+        },
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "defaultValue": "GlobalVariablesNamespace.GlobalVariables.OrchestratorQueueFolder",
+          "isExpression": false
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "Constant": true,
+    "Name": "MaxRetryNumber",
+    "TypeFullyQualifiedName": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "0"
+  },
+  {
+    "Constant": true,
+    "Name": "MaxConsecutiveSystemExceptions",
+    "TypeFullyQualifiedName": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "0"
+  },
+  {
+    "Constant": true,
+    "Name": "ExScreenshotsFolderPath",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "\"Exceptions_Screenshots\""
+  },
+  {
+    "Constant": true,
+    "Name": "LogMessage_GetTransactionData",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "\"Processing Transaction Number: \""
+  },
+  {
+    "Constant": true,
+    "Name": "LogMessage_GetTransactionDataError",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "\"Error getting transaction data for Transaction Number: \""
+  },
+  {
+    "Constant": true,
+    "Name": "LogMessage_Success",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "\"Transaction Successful.\""
+  },
+  {
+    "Constant": true,
+    "Name": "LogMessage_BusinessRuleException",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "\"Business rule exception.\""
+  },
+  {
+    "Constant": true,
+    "Name": "LogMessage_ApplicationException",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "\"System exception.\""
+  },
+  {
+    "Constant": true,
+    "Name": "ExceptionMessage_ConsecutiveErrors",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "\"The maximum number of consecutive system exceptions was reached.  Consecutive retry number: {0}\""
+  },
+  {
+    "Constant": true,
+    "Name": "RetryNumberGetTransactionItem",
+    "TypeFullyQualifiedName": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "2"
+  },
+  {
+    "Constant": true,
+    "Name": "RetryNumberSetTransactionStatus",
+    "TypeFullyQualifiedName": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "2"
+  },
+  {
+    "Constant": true,
+    "Name": "ShouldMarkJobAsFaulted",
+    "TypeFullyQualifiedName": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "False"
+  },
+  {
+    "Constant": true,
+    "Name": "logF_BusinessProcessName",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "\"Framework\""
+  },
+  {
+    "Constant": false,
+    "Name": "OrchestratorQueueName",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": "\"TestFramework\""
+  },
+  {
+    "Constant": false,
+    "Name": "OrchestratorQueueFolder",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "Expression": null
+  }
+]
